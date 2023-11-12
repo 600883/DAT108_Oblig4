@@ -22,7 +22,7 @@
 	    </tr>
 
 	    <c:forEach var="deltagere" items="${deltagerListe}">
-	         <tr style="${deltagere.mobil eq deltager.mobil  ? 'background-color: greenyellow;' : ''}">
+	         <tr style="${deltagere.mobil eq deltager.mobil ? 'background-color: greenyellow;' : ''}">
 
 	            <td><c:out value="${deltagere.kjonn}" /></td>
 	            <td><c:out value="${deltagere.fornavn}" /></td>

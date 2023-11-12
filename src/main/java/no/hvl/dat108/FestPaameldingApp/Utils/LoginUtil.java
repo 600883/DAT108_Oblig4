@@ -5,10 +5,12 @@ import jakarta.servlet.http.HttpSession;
 
 public class LoginUtil {
 
+    // hjelpemetode for å logge ut bruker
     public static void loggUtBruker(HttpSession session) {
         session.invalidate();
     }
 
+    // metode for å logge inn bruker ved innlogging
     public static void loggInnBruker(HttpServletRequest request, String mobil, String passord) {
         // Logger ut bruker før den logger inn igjen slik at vi ikke får problemer med
         // autentisering
